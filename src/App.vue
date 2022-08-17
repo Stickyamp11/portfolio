@@ -1,26 +1,66 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="content-wrapper">
+<MainComponent/>
+<BackgroundComponent/>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BackgroundComponent from "./components/BackgroundAnimation/Background-Component.vue"
+import MainComponent from "./components/MainComponent/main-component.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BackgroundComponent,MainComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.content-wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#app {
+
+}
+
+*{
+    font-family: 'Poppins';
+}
+html{
+	scroll-behavior: smooth;
+
+    margin:0;
+  overflow-x: hidden;
+
+}
+
+body{
+  background-color: transparent;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2dfdf;
+  border-radius: 4px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 82, 82);
+}
+
 </style>

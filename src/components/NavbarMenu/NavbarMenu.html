@@ -1,0 +1,39 @@
+
+  <div class="custom-navbar">
+    <div class="row d-flex justify-content-center main-row">
+      <div class="navbar-element col-3  d-flex flex-column justify-content-center align-items-center navbar-element-not-last-one">
+        <a class="navbar-button d-flex flex-column justify-content-center align-items-center" href="#about-section"
+        v-on:click="handleNavBarClick('ABOUT')"
+       v-bind:class="{buttonactive: activeNavbar == 'ABOUT'}">
+       <i class="fa-solid fa-user"></i>
+        <span>ABOUT</span>
+        </a>
+       </div>
+      <div class="navbar-element col-3 d-flex flex-column justify-content-center align-items-center navbar-element-not-last-one">
+       <a class="navbar-button d-flex flex-column justify-content-center align-items-center" 
+       href="#skills-section" v-on:click="handleNavBarClick('SKILLS')"
+       v-bind:class="{buttonactive: activeNavbar == 'SKILLS'}">
+       <i class="fa-solid fa-check"></i>
+       <span>SKILLS</span>
+       </a>
+      </div>
+       <div class="navbar-element col-3  d-flex flex-column justify-content-center align-items-center navbar-element-not-last-one">
+        <a class="navbar-button d-flex flex-column justify-content-center align-items-center" href="#experience-page"
+        v-on:click="handleNavBarClick('EXPERIENCE')"
+       v-bind:class="{buttonactive: activeNavbar == 'EXPERIENCE'}">
+       <i class="fa-solid fa-briefcase"></i>
+        <span>EXPERIENCE</span>
+        </a>
+       </div>
+       <div class="navbar-element col-3  d-flex flex-column justify-content-center align-items-center">
+        <a class="navbar-button d-flex flex-column justify-content-center align-items-center" href="#tecnologies-section"
+        v-on:click="handleNavBarClick('TECNOLOGIES')"
+       v-bind:class="{buttonactive: activeNavbar == 'TECNOLOGIES'}">
+       <i class="fa-solid fa-microchip"></i>
+        <span>TECNOLOGIES</span>
+        </a>
+       </div>
+    </div>
+
+  </div>
+

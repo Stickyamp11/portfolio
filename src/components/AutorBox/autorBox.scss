@@ -1,0 +1,244 @@
+.autor-box {
+
+}
+
+
+
+.box-wrapper{
+    position: relative;
+    width: 35rem;
+    height: 50rem;
+    margin-left: -78%;
+    margin-top: 15%;
+    z-index: 2;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+  .fancy-software{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .fancy-software .dynamic-text{
+    color: #20abe1;
+    font-weight: 600;
+    line-height: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding-right: 4%;
+
+
+  }
+  .dynamic-text li{
+    list-style: none;
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(3) infinite;
+  }
+
+  @keyframes slide{
+    100%{
+      top: -9rem
+    }
+  }
+
+  .dynamic-text li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    animation: writing 3s steps(17) infinite reverse;
+  }
+
+@keyframes writing{
+  40%,
+  60%{
+    left: calc(100% + 30px)
+  }
+
+  100%{
+    left: 0;
+  }
+
+}
+
+.social-media i, .social-media span{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #20abe1;
+}
+
+.social-media span{
+  font-size: larger;
+  font-weight: 800;
+}
+
+.photo-place{
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
+
+.photo-place::before{
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 40rem;
+  background-color: #ffffff;
+  transform: rotate(80deg);
+  bottom: -28rem;
+  right: -2rem;
+}
+.photo-place::after{
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 40rem;
+  background-color: #ffffff;
+  transform: rotate(-80deg);
+  bottom: -28rem;
+  left: -2rem;
+}
+
+
+
+#this-is-me{
+  width: 100%;
+}
+
+.who-am-i{
+  height: 40%;
+}
+.my-logo{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+.my-logo img{
+  width: 70%;
+  height: 100%;
+  
+}
+
+.contact-me{
+  position: absolute;
+  width: 100%;
+  margin-left: 0%;
+  bottom: 0;
+}
+
+.contact-button-wrapper{
+  border-top: 1px solid black;
+  color: black;
+  
+}
+
+
+#contact-button-left-wrapper{
+  border-right: 1px solid black;
+  
+}
+.contact-button{
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  border: 0;
+
+}
+.contact-button i{
+  margin-left: 8px;
+}
+
+.contact-button:hover{
+  transition: 0.5s;
+  color: #20abe1;
+  }
+
+.contact-button:focus{
+  outline: none;
+  }
+
+@media only screen and (max-width: 1600px) 
+{
+  .box-wrapper{
+    position: relative;
+    width: 35rem;
+    height: 50rem;
+    margin-left: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    z-index: 2;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+}
+
+
+@media only screen and (max-width: 600px) 
+{
+  .box-wrapper{
+    width: 100%;
+    height: 40rem;
+  }
+
+  .dynamic-text li{
+    list-style: none;
+    font-size: 1.5rem;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(3) infinite;
+  }
+
+  .photo-place::before{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 40rem;
+    background-color: #ffffff;
+    transform: rotate(80deg);
+    bottom: -26rem;
+    right: -2rem;
+  }
+  .photo-place::after{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 40rem;
+    background-color: #ffffff;
+    transform: rotate(-80deg);
+    bottom: -26rem;
+    left: -2rem;
+  }
+
+  .contact-me button, .contact-me a{
+    font-size: 0.8rem;
+  }
+
+  .my-logo img{
+    width: 90%;
+    height: 100%;
+    
+  }
+
+}

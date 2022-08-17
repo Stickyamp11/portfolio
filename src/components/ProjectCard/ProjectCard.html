@@ -1,0 +1,11 @@
+
+<section class="project-card">
+  <div class="d-flex flex-column align-items-center justify-content-center project-card-wrapper">
+    <a class="project-link d-flex align-items-center justify-content-center" :href="projectLink">
+      <img class="project-logo" :src="projectImage" :style="[projectName == 'Ucommerce' ? {'min-width': '100%', 'max-width': '100%'} : '']">
+    </a>
+    <span class="project-name">{{projectName}}</span>
+    <span class="project-tecnologies">{{projectTecnologies}}</span>
+  </div>
+</section>
+

@@ -1,0 +1,79 @@
+.main-page {
+
+}
+
+
+.page-wrapper{
+
+    margin-top: 1%;
+    margin-left: -28%;
+    padding-left: 5%;
+    position: absolute;
+    top: 20%;
+    left: 68%;
+    width: 60rem;
+    height: 40rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.schooling-img{
+    width: 450px; height: 220px;
+}
+
+@media only screen and (max-width: 1600px) 
+{
+    .page-wrapper{
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+        padding-left: auto;
+        padding: 5%;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 96%;
+        margin-left: 2%;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 4px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        z-index: 1;
+    }
+    .schooling-img{
+        width: 100%;
+        height: 80%;
+    }
+}
+
+
+#skills-page{
+    margin-top: 300%;
+}
+
+#skill-list i{
+    color: rgb(44, 168, 199);
+}
+
+.spacing-div{
+    height: 4rem;
+    width: 4rem;
+  }
+
+#skill-list{
+    margin-left: 7%;
+}
+
+.skill-image{
+    min-width: 4rem;
+}
+
+.page-separator{
+    background: linear-gradient(to right, rgb(44, 168, 199), #ffffff);
+    height: 1px;
+}

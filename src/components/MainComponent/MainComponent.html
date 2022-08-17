@@ -1,0 +1,30 @@
+
+<section class="main-component">
+
+
+  <div v-if="fullScreen">
+    <AutorComponent/>
+    <NavbarMenu/>
+    <MainPage/>
+  </div>
+
+    <div v-else class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <NavbarMenu/>
+
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+        
+        <AutorComponent/>
+
+        </div>
+
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <MainPage/>
+
+        </div>
+    
+    </div>
+    
+</section>
+
