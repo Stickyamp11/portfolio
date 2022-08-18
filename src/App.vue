@@ -29,14 +29,22 @@ export default {
 #app {
 
 }
+@font-face {
+  font-family: "Crimson";
+  src: url(fonts/CrimsonText-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Dancing";
+  src: url(fonts/DancingScript-Regular.ttf) format("truetype");
+}
 
 *{
-    font-family: 'Poppins';
+    font-family: "Crimson", oswaldregular, sans-serif;
 }
+
 html{
 	scroll-behavior: smooth;
-
-    margin:0;
+  margin:0;
   overflow-x: hidden;
 
 }
